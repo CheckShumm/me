@@ -1,0 +1,54 @@
+
+.Grid {
+    /* justify-content: center; */
+    display: grid;
+    /* grid-template-columns: auto auto auto auto; */
+    gap: 16px;
+    padding-bottom:32px;
+    grid-template-columns: repeat(auto-fit, minmax(208px, 1.0fr));
+}
+
+.Card {
+    display: grid;
+    width: 216px;
+    height: 216px;
+    padding: 12px;
+    /* align-content: center; */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 6px;
+    border: solid;
+    border-width: thin;
+    border-color: lightgrey;
+}
+.Logo {
+    margin: auto;
+    width: 75%;
+    padding: 16px;
+    /* width: 150px; */
+    height: 132px;
+    opacity: 0.60;
+}
+
+.Card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.ExperienceDescription {
+    display: grid;
+}
+
+.LabelContainer {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Label {
+    font: Sans-serif;
+    font-size: 10px;
+    margin: 4px;
+}
+
+.WorkDate {
+    font-size: 14px;
+}

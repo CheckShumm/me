@@ -1,0 +1,77 @@
+@import "../../res/animista.css";
+.Title{
+  font: Sans-serif;
+  font-size: 2em;
+  animation-name: tracking-in-expand;
+  animation-duration: 1s;
+  /* text-align:center; */
+  /* justify-content: center; */
+}
+
+.Message{
+  font: Sans-serif;
+  font-size: 1.5em;
+  animation-name: fade-in;
+  animation-duration: 1s;
+}
+
+.Container{
+    min-height:20vh;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50%;
+    padding-top:32px;
+}
+
+.Profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.item1 { grid-area: text; }
+.item2 { grid-area: profile; }
+.item3 { grid-area: links; }
+
+
+.grid-container {
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
+    justify-content: center;
+    align-items: center;
+  display: grid;
+  grid-template-areas:
+    'text text text profile profile profile'
+    'text text text profile profile profile'
+    'links links links links links links';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.Links {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.Icon {
+    margin: 8px; 
+    padding-left:16px;   
+    width:32px;
+    height:32px;
+}
+
+
+
+.Icon:hover {
+  filter: invert(40%) sepia(30%) saturate(2878%) hue-rotate(180deg) brightness(104%) contrast(97%);
+}
+
+/* .grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+} */
